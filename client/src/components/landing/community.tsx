@@ -4,18 +4,16 @@ import { MessageCircle, Twitter, Users } from "lucide-react";
 
 export default function Community() {
   const handleTelegramJoin = () => {
-    // TODO: Replace with actual Telegram link
-    window.open("https://t.me/tpolls", "_blank");
+    window.open("https://t.me/tpolls_official", "_blank");
   };
 
   const handleTwitterFollow = () => {
-    // TODO: Replace with actual Twitter link
-    window.open("https://twitter.com/tpolls", "_blank");
+    window.open("http://x.com/tpolls_official", "_blank");
   };
 
   const handleBetaSignup = () => {
     // TODO: Implement beta signup functionality
-    console.log("Beta signup clicked");
+    window.open("https://t.me/tpolls_official_bot", "_blank");
   };
 
   return (

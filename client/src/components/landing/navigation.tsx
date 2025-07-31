@@ -6,6 +6,10 @@ import { ThemeToggle } from "@/components/theme-toggle";
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLaunchApp = () => {
+    window.open("https://t.me/tpolls_official_bot", "_blank");
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -54,7 +58,7 @@ export default function Navigation() {
 
           <div className="flex items-center space-x-4">
             <ThemeToggle />
-            <Button className="bg-primary text-white hover:bg-primary/90">
+            <Button className="bg-primary text-white hover:bg-primary/90" onClick={handleLaunchApp}>
               Launch App
             </Button>
             
