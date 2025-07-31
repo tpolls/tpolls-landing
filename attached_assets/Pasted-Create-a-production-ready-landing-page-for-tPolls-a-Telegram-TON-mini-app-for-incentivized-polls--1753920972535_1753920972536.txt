@@ -1,0 +1,69 @@
+Create a production-ready landing page for "tPolls", a Telegram/TON mini-app for incentivized polls.
+
+Framework & Stack:
+- Next.js (latest)
+- Tailwind CSS
+- Framer Motion for scroll-triggered animations
+
+General Style:
+- Clean, minimal, light-themed design
+- Professional spacing, large white space
+- Modern fonts
+- Smooth section animations (fade-up and slide-in) triggered when each section enters the viewport
+- Responsive for desktop, tablet, and mobile
+
+Page Sections (in order):
+
+1. Hero Section:
+   - Full-height viewport section with a light background and abstract animated shapes in the background
+   - Headline: "Redefining Consensus"
+   - Subheadline: "Community-driven polls with rewards on TON"
+   - A large primary call-to-action button: "Start Polling"
+   - Add subtle animated abstract chart-like lines or curves behind the hero content
+
+2. Problem Section:
+   - Headline: "Most polls are ignored – response rates <10%"
+   - A short paragraph explaining feedback fatigue and how tPolls solves it
+   - This section should fade up when scrolled into view
+
+3. How It Works:
+   - Three columns with icons, each animating individually as they enter the viewport
+     1. "Create a Poll"
+     2. "Engage Your Community"
+     3. "Reward Participants"
+
+4. Features & Benefits:
+   - A responsive grid of feature cards with icons and short descriptions
+     - Gamified Polls
+     - Token Rewards
+     - Anti-Bot Mechanism
+     - Runs inside Telegram on TON
+
+5. Demo Section:
+   - Placeholder mini-app screenshots displayed in a horizontal scrolling container
+   - Smooth horizontal scroll effect
+   - Fade-up animation for the container
+
+6. Community & CTA:
+   - Section with large text: "Join the Community"
+   - Buttons linking to Telegram and Twitter
+   - A secondary button: "Join the Beta"
+
+7. Footer:
+   - Simple footer with links and social icons
+
+Animations:
+- Use Framer Motion’s `whileInView` and `variants` to animate each section
+- Hero text: fade in + slight upward motion
+- Subsequent sections: fade-up and staggered child animations
+
+Additional Requirements:
+- Code should be modular: create components for Hero, Section, FeatureGrid, Footer
+- Add a smooth scroll experience
+- Optimize for performance
+
+Deliverables:
+- Next.js project structure with pages/index.tsx
+- Tailwind configured
+- Framer Motion installed
+- Sections implemented with motion components
