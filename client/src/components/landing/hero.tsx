@@ -9,7 +9,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-white">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-900">
       {/* Abstract Background Elements */}
       <div className="abstract-lines" />
       <div className="abstract-shape w-96 h-96 -top-48 -left-48" />
@@ -21,7 +21,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl md:text-7xl font-bold text-slate-900 mb-6"
+          className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6"
         >
           Redefining{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
@@ -33,7 +33,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-xl md:text-2xl text-slate-600 mb-12"
+          className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-12"
         >
           Community-driven polls with rewards on TON
         </motion.p>

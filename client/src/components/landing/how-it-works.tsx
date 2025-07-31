@@ -27,7 +27,7 @@ const gradients = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-32 bg-slate-50" id="how-it-works">
+    <section className="py-32 bg-slate-50 dark:bg-slate-800" id="how-it-works">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -36,8 +36,8 @@ export default function HowItWorks() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">How It Works</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">How It Works</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             Three simple steps to revolutionize community engagement
           </p>
         </motion.div>
@@ -59,8 +59,8 @@ export default function HowItWorks() {
               <div className={`w-20 h-20 bg-gradient-to-r ${gradients[index]} rounded-full flex items-center justify-center mx-auto mb-6`}>
                 <step.icon className="text-white w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">{step.title}</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">{step.title}</h3>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                 {step.description}
               </p>
             </motion.div>

@@ -26,7 +26,7 @@ const demoScreenshots = [
 
 export default function DemoSection() {
   return (
-    <section className="py-32 bg-slate-50" id="demo">
+    <section className="py-32 bg-slate-50 dark:bg-slate-800" id="demo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -35,8 +35,8 @@ export default function DemoSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">See It In Action</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">See It In Action</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             Experience the tPolls interface through our interactive demo screenshots
           </p>
         </motion.div>
@@ -61,15 +61,15 @@ export default function DemoSection() {
                 }}
                 className="flex-none w-80"
               >
-                <Card className="shadow-lg overflow-hidden">
+                <Card className="shadow-lg overflow-hidden dark:bg-slate-800 dark:border-slate-700">
                   <img 
                     src={demo.imageUrl} 
                     alt={demo.title}
                     className="w-full h-96 object-cover"
                   />
                   <CardContent className="p-6">
-                    <h4 className="font-semibold text-slate-900 mb-2">{demo.title}</h4>
-                    <p className="text-slate-600 text-sm">{demo.description}</p>
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-2">{demo.title}</h4>
+                    <p className="text-slate-600 dark:text-slate-300 text-sm">{demo.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>

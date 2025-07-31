@@ -31,7 +31,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-32 bg-white" id="features">
+    <section className="py-32 bg-white dark:bg-slate-900" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -40,8 +40,8 @@ export default function Features() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Features & Benefits</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Features & Benefits</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             Everything you need to create engaging, rewarding poll experiences
           </p>
         </motion.div>
@@ -59,13 +59,13 @@ export default function Features() {
                 ease: "easeOut" 
               }}
             >
-              <Card className="border border-slate-200 hover:shadow-lg transition-all duration-300 h-full">
+              <Card className="border border-slate-200 dark:border-slate-700 dark:bg-slate-800 hover:shadow-lg transition-all duration-300 h-full">
                 <CardContent className="p-8">
                   <div className={`w-16 h-16 bg-gradient-to-r ${feature.gradient} rounded-xl flex items-center justify-center mb-6`}>
                     <feature.icon className="text-white w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">{feature.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">{feature.title}</h3>
+                  <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>

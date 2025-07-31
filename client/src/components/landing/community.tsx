@@ -19,7 +19,7 @@ export default function Community() {
   };
 
   return (
-    <section className="py-32 bg-white" id="community">
+    <section className="py-32 bg-white dark:bg-slate-900" id="community">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -27,13 +27,13 @@ export default function Community() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-8">
             Join the{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               Community
             </span>
           </h2>
-          <p className="text-xl text-slate-600 mb-16 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-600 dark:text-slate-300 mb-16 max-w-2xl mx-auto">
             Be part of the revolution in community-driven decision making. Connect with other creators, 
             share insights, and help shape the future of incentivized polling.
           </p>
