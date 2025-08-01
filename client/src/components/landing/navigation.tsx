@@ -41,6 +41,14 @@ export default function Navigation() {
               >
                 Features
               </button>
+              <a
+                href="/tpolls_litepaper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
+              >
+                Litepaper
+              </a>
               <button
                 onClick={() => scrollToSection('demo')}
                 className="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
@@ -90,6 +98,14 @@ export default function Navigation() {
               >
                 Features
               </button>
+              <a
+                href="/tpolls_litepaper.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-left px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
+              >
+                Litepaper
+              </a>
               <button
                 onClick={() => scrollToSection('demo')}
                 className="block w-full text-left px-3 py-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"

@@ -96,8 +96,8 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-slate-400">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Documentation
+                <a href="/tpolls_litepaper.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  Litepaper
                 </a>
               </li>
               <li>
